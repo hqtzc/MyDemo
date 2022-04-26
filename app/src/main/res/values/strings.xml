@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">ZcDemo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+    <string name="load_this">加载中</string>
+    <string name="load_over">加载完啦!</string>
+
+    <string name="disabledMessage">空测试!</string>
+    <string name="longLabel">长文字</string>
+    <string name="shortLabel">短文字</string>
+
+    <string name="home_nav_index">首页</string>
+    <string name="home_nav_found">更多</string>
+    <string name="home_nav_message">消息</string>
+    <string name="home_nav_me">我</string>
+</resources>

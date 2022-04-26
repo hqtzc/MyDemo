@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">lib_gucetong</string>
+    <string name="text_empty">暂无数据!</string>
+    <string name="text_retry">请求失败!\n点击重试</string>
+</resources>

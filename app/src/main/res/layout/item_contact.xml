@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/newlist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card">
+
+            <zc.test.com.mydemo.widget.CircularImageView
+                android:id="@+id/img_helper"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                app:angle="10"
+                app:ratio="1"
+                android:src="@drawable/ic_img_null" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@+id/img_helper"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_helper_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="欧洲杯即将打火机客户三点水杀得..."
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="发布时间"
+                        android:textColor="#FFA9A7A7"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_helper_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13dp"
+                        android:text="2019-04-30 11:12:33"
+                        android:textColor="#FFA9A7A7"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+</RelativeLayout>

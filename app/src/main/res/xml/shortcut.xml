@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutDisabledMessage="@string/disabledMessage"
+        android:shortcutId="settings"
+        android:shortcutLongLabel="@string/longLabel"
+        android:shortcutShortLabel="@string/shortLabel">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="zc.test.com.mydemo.test.RxJavaActivity"
+            android:targetPackage="zc.test.com.mydemo" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

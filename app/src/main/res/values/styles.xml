@@ -1,0 +1,94 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+<!--     Base application theme. -->
+
+    <!-- 应用主题样式 -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- 窗口背景颜色 -->
+        <item name="android:windowBackground">@color/common_window_background_color</item>
+        <!-- 应用的主要色调，ActionBar Toolbar 默认使用该颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 应用的主要暗色调，状态栏默认使用该颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 应用的强调色，CheckBox RadioButton Switch 等一般控件的选中效果默认采用该颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 默认文本颜色，Button、TextView 的文字颜色 -->
+        <item name="android:textColor">@color/common_text_color</item>
+        <!-- 默认字体大小，Button、TextView 的字体大小 -->
+        <item name="android:textSize">@dimen/sp_14</item>
+        <!-- 默认提示颜色，Button、TextView 的提示文字颜色 -->
+        <item name="android:textColorHint">@color/common_text_hint_color</item>
+        <!-- ActionMode 覆盖 Actionbar 不被顶下来 -->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- ActionMode 的颜色 -->
+        <item name="actionModeBackground">@color/colorPrimary</item>
+        <!-- 解决 Android 5.1 及以上版本 Button 英文字符串自动变大写的问题 -->
+        <item name="android:textAllCaps">false</item>
+        <!-- 解决 ImageView 不能自动等比拉伸图片的问题 -->
+        <item name="android:adjustViewBounds">true</item>
+        <!-- 默认隐藏输入法，开启这个选项后会导致输入对话框在关闭之后不能关闭软键盘 -->
+        <!--<item name="android:windowSoftInputMode">stateHidden</item>-->
+        <!-- 关闭 RecyclerView NestedScrollView ViewPager 水波纹效果 -->
+        <item name="android:overScrollMode">never</item>
+        <!-- 关闭 TextView 自带的文字间距 -->
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+
+    <style name="AppThemeWelcome" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@mipmap/splash</item>
+    </style>
+
+    <style parent="Theme.AppCompat.Light.NoActionBar" name="AppSplash">
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- 全屏主题样式 -->
+    <style name="FullScreenTheme" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- 闪屏页主题样式 -->
+    <style name="SplashTheme" parent="FullScreenTheme">
+        <!-- https://www.jianshu.com/p/d0d907754603 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!-- parent="@android:style/Theme.Dialog"  相当于是继承 -->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@color/no_color</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- dialog的动画 -->
+    <style name="main_menu_animstyle">
+        <!-- windowEnterAnimation 进入的动画 -->
+        <!--  代码里面 -->
+        <item name="android:windowEnterAnimation">@anim/dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialog_out_anim</item>
+    </style>
+
+    <style name="dialog_scale_animstyle">
+        <item name="android:windowEnterAnimation">@anim/scale_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/scale_dialog_out_anim</item>
+    </style>
+
+
+
+</resources>

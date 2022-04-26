@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.HomeFragment">
+
+    <include layout="@layout/custom_bar"/>
+
+    <zc.test.com.mydemo.widget.BounceScrollView
+        android:id="@+id/scroll_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_popdialog"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="弹出dialog"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="显示/隐藏"/>
+
+                <TextView
+                    android:id="@+id/txt_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="首页" />
+
+                <Button
+                    android:id="@+id/btn_mysuccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="成功"/>
+
+                <Button
+                    android:id="@+id/btn_myfail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="失败"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_sn_short"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="snackbar短"/>
+
+
+                <Button
+                    android:id="@+id/btn_sn_long"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="snackbar长"/>
+
+                <Button
+                    android:id="@+id/btn_sn_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="snackbar自定义"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_select_pic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="选择图片"/>
+                <ImageView
+                    android:id="@+id/txt_show_path"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_code"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="loading"/>
+
+                <Button
+                    android:id="@+id/btn_swipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="侧边选项"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </zc.test.com.mydemo.widget.BounceScrollView>
+
+</LinearLayout>

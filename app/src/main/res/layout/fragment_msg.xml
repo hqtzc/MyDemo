@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".main.MsgFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="自定义贝塞尔曲线"
+        tools:ignore="MissingConstraints" />
+
+    <zc.test.com.mydemo.widget.BezierView
+        android:id="@+id/bezierView2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#81debc"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
+
+    <com.gucetong.xyay.lib_gucetong.widget.ClearEditText
+        android:id="@+id/edit_account"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/card"
+        android:drawablePadding="12dp"
+        android:hint="请输入登录账号"
+        android:paddingLeft="20dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/bezierView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinputlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:background="@drawable/card"
+            android:paddingLeft="20dp"
+            android:hint="请输入登录账号"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtinputlayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:background="@drawable/card"
+            android:paddingLeft="20dp"
+            android:hint="请输入密码"
+            android:imeActionLabel="登录"
+            android:imeOptions="actionUnspecified"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
